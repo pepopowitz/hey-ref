@@ -1,3 +1,3 @@
-import HomeContainer from './Home.container';
+import Home from './Home';
 
-export default HomeContainer;
+export default Home;

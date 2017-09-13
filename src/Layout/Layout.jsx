@@ -1,5 +1,11 @@
 import React from 'react';
 
+import './Layout.css';
+
 export default function Layout({ children }) {
-    return <div className="hey-ref">{children}</div>;
+    return (
+        <div id="hey-ref" className="container">
+            {children}
+        </div>
+    );
 }

@@ -1,0 +1,11 @@
+@import 'node_modules/bulma/sass/utilities/variables.sass';
+
+.title.clock {
+    font-size: 6em;
+    &.expired {
+        color: $danger;
+    }
+}
+.level:not(:last-child) {
+    margin-bottom: 0;
+}

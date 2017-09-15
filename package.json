@@ -1,31 +1,32 @@
 {
-    "name": "hey-ref",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "bulma": "^0.5.2",
-        "font-awesome": "^4.7.0",
-        "react": "^15.6.1",
-        "react-dom": "^15.6.1",
-        "react-router": "^4.2.0",
-        "react-router-dom": "^4.2.2",
-        "react-scripts": "1.0.13"
-    },
-    "scripts": {
-        "start": "npm run dev:all",
-        "dev:all":
-            "concurrently --kill-others -p \"[{name}]\" -n \"SASS,WEB\" -c \"cyan,yellow\" \"npm run watch-css\" \"npm run start-web\" ",
-        "start-web": "react-scripts start",
-        "build-css":
-            "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-        "watch-css":
-            "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-        "build": "npm run build-css && react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-    },
-    "devDependencies": {
-        "concurrently": "^3.5.0",
-        "node-sass-chokidar": "0.0.3"
-    }
+  "name": "hey-ref",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.5.2",
+    "class-names": "^1.0.0",
+    "date-fns": "^1.28.5",
+    "font-awesome": "^4.7.0",
+    "hh-mm-ss": "^1.1.0",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "start": "npm run dev:all",
+    "dev:all": "concurrently --kill-others -p \"[{name}]\" -n \"SASS,WEB\" -c \"cyan,yellow\" \"npm run watch-css\" \"npm run start-web\" ",
+    "start-web": "react-scripts start",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "node-sass-chokidar": "0.0.3"
+  }
 }

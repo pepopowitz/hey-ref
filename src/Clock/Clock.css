@@ -1,0 +1,7 @@
+.title.clock {
+  font-size: 6em; }
+  .title.clock.expired {
+    color: #ff3860; }
+
+.level:not(:last-child) {
+  margin-bottom: 0; }

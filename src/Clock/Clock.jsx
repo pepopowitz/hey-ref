@@ -1,6 +1,7 @@
 import React from 'react';
-import TimeFormat from 'hh-mm-ss';
 import classNames from 'class-names';
+
+import * as TimeFormat from './hh-mm-ss';
 
 import PeriodSelector from './PeriodSelector';
 import StartStop from './StartStop';
